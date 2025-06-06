@@ -46,15 +46,15 @@ class Footer extends HTMLElement {
                     </ul>
                   </div>
                   <div class="icon-wrap">
-                    <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank"><img src="../assets/footer/ar.svg" alt="ar"></a>
-                    <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank" class="social-icon"><img src="../assets/footer/myon.svg" alt="myon"></a>
-                    <a href="https://blog.naver.com/epiclang" class="social-icon" target="_blank"><img src="../assets/footer/blog.svg" alt="blog"></a>
+                    <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank"><img src="assets/footer/ar.svg" alt="ar"></a>
+                    <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank" class="social-icon"><img src="assets/footer/myon.svg" alt="myon"></a>
+                    <a href="https://blog.naver.com/epiclang" class="social-icon" target="_blank"><img src="assets/footer/blog.svg" alt="blog"></a>
                   </div>
                   <div class="footer-info">
                     <p class="footer-logo">©EPIC PRAXIS</p>
                     <div class="footer-right-icons">
-                      <a href="javascript:void(0)" class="copy-link"><img src="../assets/footer/external.svg" alt="external link"></a>
-                      <a href="#" class="btn-top"><img src="../assets/footer/top.svg" alt="top button"></a>
+                      <a href="javascript:void(0)" class="copy-link"><img src="assets/footer/external.svg" alt="external link"></a>
+                      <a href="#" class="btn-top"><img src="assets/footer/top.svg" alt="top button"></a>
                     </div>
                   </div>
                 </div>
