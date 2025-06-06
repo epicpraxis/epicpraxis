@@ -38,7 +38,7 @@ class Header extends HTMLElement {
                 </button>
                 <div class="mobile-menu">
                     <ul>
-                        <li><a href="../company.html" class="${this.isActive('company.html')}">회사소개</a></li>
+                        <li><a href="company.html" class="${this.isActive('company.html')}">회사소개</a></li>
                         <li><a href="team.html">팀문화</a></li>
                         <li><a href="brand.html">브랜드</a></li>
                         <li><a href="blog.html">블로그</a></li>
