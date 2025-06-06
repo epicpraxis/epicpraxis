@@ -8,7 +8,7 @@ class Header extends HTMLElement {
             <header>
                 <div class="logo">
                     <a href="index.html">
-                        <img src="assets/epicpraxis.svg" alt="EPIC PRAXIS Logo">
+                        <img src="../assets/epicpraxis.svg" alt="EPIC PRAXIS Logo">
                     </a>
                 </div>
                 <nav>
