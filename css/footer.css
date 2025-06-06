@@ -1,0 +1,200 @@
+.footer-desktop{
+        display: none;
+    }
+    .footer-mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 1;
+      color:#fff;
+      padding: 0 0 1.9rem 0; /*footer 텍스트 간격 조정*/
+      font-size: 0.58rem; /*iphone SE 고려해서 정한 사이즈. 바꾸지 말기!*/
+      font-weight: 300;
+      margin-top: 80%;/*wave 높이 조정*/
+      gap: 6px; 
+    }
+      .footer-mobile-text,
+      .footer-mobile-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        align-items: center;
+      }
+      
+    .footer-mobile span{
+        white-space: nowrap;
+      color: #fff;
+  }
+    .footer-mobile a{
+      color: #fff;
+      text-decoration: none;
+  }
+    .footer-mobile span.bold{
+      font-weight: 500;
+      color: #fff;
+    }
+
+
+  .footer {
+    background-color: white;
+    padding: 60px 40px;
+    font-family: 'Pretendard', sans-serif;
+    color: black;
+    position: relative;
+    border-top: 1px solid #ddd;
+  }
+
+  .footer-inner {
+    max-width: 1152px;
+    margin: 0 auto;
+  }
+
+  .footer-service {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .service-wrap {
+    display: flex;
+    gap: 80px;
+  }
+
+  .service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .service-item a {
+    color: #666;
+    text-decoration: none;
+  }
+
+  .icon-wrap {
+    display: flex;
+    gap: 12px;
+  }
+
+  .icon-wrap img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 40px;
+  }
+
+  .footer-logo {
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .footer-right-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .footer-right-icons img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .btn-top img {
+    width: 18px;
+    height: 24px;
+  }
+
+
+/* Wave and Footer styles */
+  .footer-section {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 0 calc((100% - 1152px) / 2);
+  /*background: #3179F6;  optional background */
+}
+.wave-wrapper{
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+  }
+.animated-wave {
+  width: 200%; /* double width for seamless animation */
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: waveMove 22s linear infinite;
+}
+
+@keyframes waveMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media(max-width: 1200px) {
+.footer-desktop{
+        display: none;
+    }
+    .footer-mobile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      z-index: 1;
+      color:#fff;
+      padding: 0 0 1.9rem 0; /*footer 텍스트 간격 조정*/
+      font-size: 0.58rem; /*iphone SE 고려해서 정한 사이즈. 바꾸지 말기!*/
+      font-weight: 300;
+      margin-top: 80%;/*wave 높이 조정*/
+      gap: 6px; 
+    }
+      .footer-mobile-text,
+      .footer-mobile-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        align-items: center;
+      }
+      
+    .footer-mobile span{
+        white-space: nowrap;
+      color: #fff;
+  }
+    .footer-mobile a{
+      color: #fff;
+      text-decoration: none;
+  }
+    .footer-mobile span.bold{
+      font-weight: 500;
+      color: #fff;
+    }
+}
+
+@media (max-width: 810px) {
+    footer {
+      padding: 1.2em 2em;
+    }
+    .container {
+        padding: 0 20px;
+    }
+    .footer-links {
+        gap: 20px;
+    }
+}

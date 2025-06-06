@@ -1,0 +1,343 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding-top: 80px; /* Height of the fixed header */
+    font-family: 'Pretendard', sans-serif;
+}
+
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background:white;
+    /*background: transparent;
+    backdrop-filter: blur(30px);*/
+    z-index: 1000;
+    padding: 1.2em calc((100% - 1152px) / 2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+}
+
+.logo {
+    height: 31px;
+    padding-top: 0px;
+    /*transform: rotate(-2deg);*/
+}
+
+.logo img {
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav a {
+    font-family: 'Pretendard', sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+    padding: 10px 13px 10px;
+}
+
+nav a:hover {
+    color: #3179F6;
+    /*background-color: #f0f0f0;*/
+    border-radius: 7px;
+    
+}
+nav a.active {
+    color: #3179F6;
+    font-weight: 600;
+}
+
+.language-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 20px;
+  padding-top: 1px;
+}
+
+.language-toggle a {
+  color: #666;
+  text-decoration: none;
+}
+
+/*.language-toggle a:last-child{
+  color: #3179F6;
+  text-decoration: none;
+}*/
+.language-toggle a:hover {
+  color: #3179F6;
+}
+.language-toggle .divider {
+  color: #333; /* or any color you want */
+  margin: 0px;
+}
+
+/* 드롭다운 기본 */
+/*.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* 버튼 바로 아래 
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 6000px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+    width: 160px;
+    z-index: 1000;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dropdown-menu li {
+    list-style: none;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    font-size: 15px;
+    color: #333;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 0.8em 1em;
+    border-radius: 6000px;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f5f5f5;
+    font-weight: 500;
+    color: #3179F6;
+    border-radius: 6000px;
+  }
+  
+  /* 호버 시 보이도록 
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }*/
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.hamburger span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #3179F6;
+    transition: all 0.3s;
+    border-radius: 2px;
+}
+
+.hamburger span.hamburger-line{
+    background: transparent;
+}
+
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background:white;
+    z-index: 9999;
+    padding: 12px 2em 2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: right;
+}
+
+.mobile-menu ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.mobile-menu li {
+    margin: 16px 0;
+}
+
+.mobile-menu a {
+    font-family: 'Pretendard', sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    text-align: right;
+    padding:0em calc((100% - 730px) / 2);
+}
+
+.mobile-menu a:hover {
+    color: #3179F6;
+}
+
+.mobile-menu a.active {
+    color: #3179F6;
+}
+
+/* Hamburger animation classes */
+.hamburger.active span:nth-child(1) {
+    transform: translateY(4.2px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+
+@media(max-width: 1200px) {
+    header, .hero, footer {
+      padding: 1.2em calc((100% - 720px) / 2);
+    }
+    header .language-toggle {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 1em;
+      margin-left: 0;
+    }
+    header .language-toggle a{
+      padding: 0 13px;
+    }
+    header .language-toggle a:last-child{
+      padding-right: calc((100% - 730px) / 2);
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0px;
+    }
+    .container {
+        padding: 0 20px;
+    }
+    nav ul {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+
+.cta-button {
+  font-family: 'Pretendard';
+  padding: 13px 25px;
+  background: linear-gradient(135deg, #3179F6, #A01AFF);
+  color: white;
+  border: none;
+  border-radius: 2000px;
+  font-size: 15px; 
+  font-weight: 500;
+}
+
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent);
+  animation: shimmer 2s infinite;
+}
+}
+
+@media (max-width: 810px) {
+    header, .hero, footer {
+      padding: 1.2em 2em;
+    }
+    .container {
+        padding: 0 20px;
+    }
+    .hero {
+        padding: 2em 2em;/*80% = 11em header랑 텍스트 사이 간격 조정*/
+        min-height: 32em;/*여기다. 푸터랑 cta 사이 간격 조정*/
+    }
+    .hero h1 {
+        font-size: 2.3em;
+        margin-bottom: 2em; /*여기는 텍스트랑 cta 사이 간격 조정*/
+    }
+    .company-info {
+        gap: 20px;
+    }
+    .footer-links {
+        gap: 20px;
+    }
+    nav ul {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+
+    @keyframes shimmer {
+      100% {
+        left: 00%;
+      }
+    }
+    .cta-button{ 
+        padding: 0.9em 2em;
+        font-size: 14px; 
+        font-weight: 500;
+        cursor: pointer;
+        transition: transform 0.2s;
+        text-decoration: none;
+    }
+    .mobile-menu {
+      padding: 1.2em 2em;
+    }
+    .mobile-menu a {
+        font-size: 16px;
+        padding: 0;
+    }
+    .mobile-menu .dropdown-menu {
+        position: static;
+        box-shadow: none;
+    }
+}

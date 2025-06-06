@@ -1,0 +1,118 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding-top: 80px; /* Height of the fixed header */
+    font-family: 'Pretendard', sans-serif;
+}
+
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* Hero section styles */
+.hero {
+    padding: 4em calc((100% - 1152px) / 2) 0;
+    min-height: 32em;/*여기다. 푸터랑 cta 사이 간격 조정*/
+    position: relative;
+    background-color: #fff;
+}
+
+.hero h1 {
+    font-family: 'Pretendard';
+    font-size: 51px;
+    font-weight: 300;
+    line-height: 1;
+    margin-bottom: 70px; /*여기는 텍스트랑 cta 사이 간격 조정*/
+    background: linear-gradient(135deg, #3179F6 0%, #3179F6 50%, #A01AFF 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /*max-width: 1267px;
+    letter-spacing: -0.02em;*/
+}
+
+.hero h1 span{
+    font-weight: 600;
+}
+
+.cta-button {
+    font-family: 'Pretendard';
+    padding: 13px 25px;
+    background: linear-gradient(135deg, #3179F6, #A01AFF);
+    color: white;
+    border: none;
+    border-radius: 2000px;
+    font-size: 15px; 
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;/*Shimmering effect*/
+    animation: none;
+    position: relative;
+    overflow: hidden;
+    color: white;
+  }
+  
+  .cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255,255,255,0.6), transparent);
+    animation: shimmer 2s infinite;
+  }
+  
+  @keyframes shimmer {
+    100% {
+      left: 100%;
+    }
+  }
+@media(max-width: 1200px) {
+    .hero {
+      padding: 4em calc((100% - 720px) / 2);
+    }
+    .hero h1 {
+        font-size: 40px;
+        margin-bottom: 2em; /*여기는 텍스트랑 cta 사이 간격 조정*/
+    }
+    .company-info {
+        gap: 20px;
+    }
+    nav ul {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media (max-width: 810px) {
+    .hero {
+      padding: 1.2em 2em;
+    }
+    .container {
+        padding: 0 20px;
+    }
+    .hero {
+        padding: 2em 2em;/*80% = 11em header랑 텍스트 사이 간격 조정*/
+        min-height: 32em;/*여기다. 푸터랑 cta 사이 간격 조정*/
+    }
+    .hero h1 {
+        font-size: 2.3em;
+        margin-bottom: 2em; /*여기는 텍스트랑 cta 사이 간격 조정*/
+    }
+    .company-info {
+        gap: 20px;
+    }
+  }

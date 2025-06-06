@@ -1,0 +1,286 @@
+.brand-hero {
+    padding: 6em calc((100% - 1020px) / 2) 0;
+    text-align: center;
+    margin-bottom: 80px;
+    position: relative;
+    background-color: #fff;
+  }
+  
+  .hero-intro h1 {
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+  
+  .hero-intro p {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 72px;
+  }
+  
+  .hero-banner-group {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 200px;
+  }
+  .hero-banner {
+      width: 560px;
+      height: 440px;
+      border-radius: 24px;
+      overflow: hidden;
+      background: white;
+      position: relative;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      padding: 24px;
+      background: linear-gradient(to bottom right, #f6fbff, #eef3fa);
+    }
+    
+    .hero-banner:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+    }
+    
+    .hero-banner-overlay {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: 100%;
+      padding: 24px;
+      text-align: left;
+    }
+    
+    .hero-banner-overlay p.top {
+      font-size: 16px;
+      font-weight: 600;
+      color: #007aff;
+      margin-bottom: 8px;
+    }
+    
+    .hero-banner-overlay p.middle {
+      font-size: 32px;
+      font-weight: 700;
+      color: #1d1d1f;
+      margin-bottom: 15px;
+    }
+    
+    .hero-banner-overlay p.bottom {
+      font-size: 17px;
+      color: #3c3c43;
+      opacity: 0.8;
+      line-height: 1.4;
+    }
+  
+  .plus-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1.5px solid #1d1d1f;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    padding: 0;
+  }
+  
+  .plus-button svg {
+    width: 20px;
+    height: 20px;
+    stroke: #1d1d1f;
+    stroke-width: 2;
+    fill: none;
+  }
+  
+  .plus-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .banner-detail {
+    display: none;
+    margin-top: 16px;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #1d1d1f;
+    transition: opacity 0.7s ease;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    pointer-events: auto;
+  }
+  
+  .banner-detail.active {
+    display: block;
+    opacity: 1;
+    height: auto;
+  }
+  
+  .banner-detail p.body {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .banner-detail p.text {
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 12px;
+      color: #666;
+    }
+  .banner-detail a {
+    color: #007aff;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 12px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  .banner-detail a:hover{
+      color: #1d1d1f;    
+    }
+  .banner-detail .close-button {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1.5px solid #1d1d1f;
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    padding: 0;
+  }
+  
+  .banner-detail .close-button svg {
+    width: 20px;
+    height: 20px;
+    stroke: #1d1d1f;
+    stroke-width: 2;
+    fill: none;
+  }
+  
+  .banner-detail .close-button:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .hero-banner.banner-expanded {
+    background: linear-gradient(to bottom right, #ffffff, #e5f1ff);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    transform: scale(1.02);
+    height: auto;
+    padding-bottom: 40px;
+  }
+  
+  .hero-banner.banner-expanded .top,
+  .hero-banner.banner-expanded .middle,
+  .hero-banner.banner-expanded .bottom {
+    display: none;
+  }
+  .hero-banner-group .hero-banner:last-child { /*두번째 브랜드 자리*/
+    background: #fff;
+    box-shadow: none;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .brand-hero{
+      padding: 6em calc((100% - 720px) / 2) 0;
+    }
+    .hero-banner-group {
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+      margin-bottom: 0px;
+    }
+  
+    .hero-intro h1 {
+      font-size: 45px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      line-height: 1.4;
+    }
+    
+    .hero-banner {
+      width: 100%;
+      height: auto;
+    }
+  
+    .hero-banner-overlay {
+      padding: 20px;
+    }
+  
+    .hero-banner-overlay p.middle {
+      font-size: 28px;
+    }
+  
+    .hero-banner-overlay p.bottom {
+      font-size: 16px;
+    }
+  
+    .banner-detail p.body {
+      font-size: 28px;
+    }
+  
+    .banner-detail p.text {
+      font-size: 15px;
+    }
+  
+    .hero-banner-group .hero-banner:last-child{
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 810px) {
+    .brand-hero{
+      padding: 3em 2em;
+    }
+    .hero-banner-group {
+      flex-direction: column;
+      align-items: center;
+      gap: 60px;
+      margin-bottom: 0px;
+    }
+  
+    .hero-intro h1 {
+      font-size: 38px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      line-height: 1.1;
+    }
+  
+    .hero-intro p{
+      font-size: 20px;
+    }
+    
+    .hero-banner {
+      width: 100%;
+      height: auto;
+    }
+  
+    .hero-banner-overlay {
+      padding: 20px;
+    }
+  
+    .hero-banner-overlay p.middle {
+      font-size: 28px;
+    }
+  
+    .hero-banner-overlay p.bottom {
+      font-size: 16px;
+    }
+  
+    .banner-detail p.body {
+      font-size: 28px;
+    }
+  
+    .banner-detail p.text {
+      font-size: 15px;
+    }
+  }

@@ -1,0 +1,123 @@
+.hero{
+  max-width: 1152px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.hero-text{
+  margin-bottom: 88px;
+}
+
+.hero-text h1{
+  font-size: 54px;
+  font-weight: 600;
+}
+
+.hero-image{
+  transform: translateZ(0);
+  transition: opacity .20s linear;
+  will-change: opacity;
+}
+
+.hero-image img{
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  margin: 0;
+  max-width: none;
+  padding: 0;
+}
+
+.description{
+  margin-top: 32px;
+  max-width: 43.75em;
+}
+.description p{
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.start{
+  max-width: 1152px;
+  display: flex;
+  margin: 0 auto;
+  gap: 200px;
+  padding: 80px 0 160px;
+}
+
+.start-text{
+  line-height: 1.4;
+  padding-top: 300px;
+}
+
+.start-text h3{
+  padding-bottom: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.start-text h2{
+  padding-bottom: 40px;
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.start-text p{
+  padding-bottom: 10px;
+  font-weight: 200;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.mission{
+  background-image: url(../assets/main/replace03.svg);
+  padding: 130px;
+  margin-bottom:160px;
+}
+.mission-text{
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.mission-text h2{
+  padding-bottom: 32px;
+  font-size: 42px;
+}
+
+.mission-text p{
+  line-height: 1.6;
+  font-weight: 300;
+  font-size: 18px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.partner{
+  margin: 0 auto;
+  max-width: 1152px;
+}
+.partner h2{
+  padding-bottom: 78px;
+  font-size: 42px;
+  font-weight: 600;
+  text-align: center;
+}
+.partner-logo{
+  margin-bottom: 90px;
+}
+.partner-logo img{
+  display: block;
+  margin: 0 auto;
+}
+
+.blog{
+  background:;
+  max-width: 1152px;
+  margin: 0 auto;
+}
+
+.blog-text{
+  text-align: center;
+}
