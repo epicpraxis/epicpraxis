@@ -34,15 +34,15 @@ class Footer extends HTMLElement {
                 <div class="footer-service">
                   <div class="service-wrap">
                     <ul class="service-list">
-                      <li class="service-item"><a href="../company.html">회사소개</a></li>
+                      <li class="service-item"><a href="company.html">회사소개</a></li>
                       <li class="service-item"><a href="team.html">팀문화</a></li>
                       <li class="service-item"><a href="brand.html">브랜드</a></li>
                       <li class="service-item"><a href="blog.html">블로그</a></li>
                       <li class="service-item"><a href="#">함께하기</a></li>
                     </ul>
                     <ul class="service-list">
-                      <li class="service-item"><a href="../privacy.html"><strong>개인정보 처리방침</strong></a></li>
-                      <li class="service-item"><a href="../terms.html"><strong>이용약관</strong></a></li>
+                      <li class="service-item"><a href="privacy.html"><strong>개인정보 처리방침</strong></a></li>
+                      <li class="service-item"><a href="terms.html"><strong>이용약관</strong></a></li>
                     </ul>
                   </div>
                   <div class="icon-wrap">
