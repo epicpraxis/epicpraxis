@@ -8,14 +8,14 @@ class Header extends HTMLElement {
             <header>
                 <div class="logo">
                     <a href="index.html">
-                        <img src="../assets/epicpraxis.svg" alt="EPIC PRAXIS Logo">
+                        <img src="assets/epicpraxis.svg" alt="EPIC PRAXIS Logo">
                     </a>
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="../company.html" class="${this.isActive('../company.html')}">회사소개</a></li>
+                        <li><a href="company.html" class="${this.isActive('company.html')}">회사소개</a></li>
                         <!--<li class="dropdown">
-                            <a href="../company.html" class="${this.isActive('../company.html')}">회사소개</a>
+                            <a href="company.html" class="${this.isActive('company.html')}">회사소개</a>
                             <ul class="dropdown-menu">
                                 <li><a href="company.html">에픽영어학원</a></li>
                             </ul>
