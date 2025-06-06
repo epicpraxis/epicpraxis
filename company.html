@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPIC PRAXIS - 회사소개</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="/css/company.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <script src="/kr/components/header.js" type="text/javascript" defer></script>
+    <script src="/kr/components/footer.js" type="text/javascript" defer></script>
+    <script src="/kr/components/hero.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <header-component></header-component>
+
+    <main>
+        <section class="hero">
+          <div class="hero-text">
+            <h1>배움이 가치로<br>이어지는 세상을 위해</h1>
+          </div>
+          <div class="hero-image">
+            <img src="../assets/main/replace.svg" alt="company-image">
+          </div>
+          <div class="description">
+            <p>
+              에픽은 배움이 지식으로 끝나지 않도록, 배운 것을 실천으로 잇는 교육 솔루션을 만듭니다.
+              누구나 배운 것을 실제로 적용하고, 삶과 일터에서 변화로 이어가도록 돕는 것이 우리의 목표입니다.
+            </p>
+          </div>
+        </section>
+
+        <section class="start">
+          <div class="start-text">
+            <h3>에픽의 시작</h3>
+            <h2>배움으로 끝나는<br>배움에 대한 문제의식</h2>
+            <p>
+              에픽은 “무엇을 위해 배우는가?”라는 질문에서 시작했습니다. 많은 교육이 지식 전달에 그치고,
+              배운 것을 왜곡된 실천만 남기는 구조는 낯설다고 느꼈어요. 우리는 학원이 아닌 리딩모임이자
+              나눔, 목장 장학이 만드는 로컬이 필요하다고 믿었습니다. 이 문제의식에서 출발해 에픽은 현재 글로벌
+              에듀테크생태계의 단숨에서요. 읽기, 연산, 데이터, 피드백에 이르는 AI-OS의 의미파동을 중심으로,
+              언제나 실제로 손닿는 경험을 설계하고 있습니다.
+            </p>
+          </div>
+          <div class="image">
+            <img src="../assets/main/replace02.svg">
+          </div>
+        </section>
+
+        <section class="mission">
+          <div class="mission-text">
+            <h2>어디서든, 누구든, 실천하는 사람이 될 수 있도록</h2>
+            <p class="desc">
+              에픽은 교육 브랜드뿐 아니라, 누구나 인터넷 배경과 상관없이 참여가 가능하도록 돕는 글로벌 교육 플랫폼입니다.
+              디지털 교육, 리딩, 수학, 쓰기, 면접 컨설팅, SAAS, 데이터 진단 등 다양한 방식으로 일상의 성장을 지원합니다.
+            </p>
+          </div>
+        </section>
+
+        <section class="partner">
+          <h2>좋은 파트너와 함께 합니다</h2>
+          <div class="partner-logo">
+            <img src="../assets/main/renaissance.svg" alt="Renaissance 로고">
+          </div>
+        </section>
+
+        <section class="blog">
+          <div class="blog-text">
+            <h2>가장 최신 에픽 소식을 확인하세요</h2>
+            <a href="#" class="blog-link">블로그 글 더 보러 가기 →</a>
+          </div>
+          <div class="blog-cards">
+            <div class="card">EPIC PRAXIS TITLE</div>
+            <div class="card">EPIC PRAXIS TITLE</div>
+            <div class="card">EPIC PRAXIS TITLE</div>
+            <div class="card">EPIC PRAXIS TITLE</div>
+          </div>
+        </section>
+    </main>
+
+    <footer-component></footer-component>
+    <script>
+      document.querySelectorAll('.hero-banner').forEach((banner) => {
+        banner.addEventListener('click', () => {
+          const detail = banner.querySelector('.banner-detail');
+          const topText = banner.querySelector('.top');
+          const plusButton = banner.querySelector('.plus-button');
+          const closeButton = banner.querySelector('.close-button');
+
+          const isExpanded = banner.classList.contains('banner-expanded');
+
+          if (isExpanded) {
+            banner.classList.remove('banner-expanded');
+            detail.classList.remove('active');
+            if (topText) topText.style.display = 'block';
+            if (plusButton) plusButton.style.display = 'flex';
+            if (closeButton) closeButton.style.display = 'none';
+          } else {
+            banner.classList.add('banner-expanded');
+            detail.classList.add('active');
+            if (topText) topText.style.display = 'none';
+            if (plusButton) plusButton.style.display = 'none';
+            if (closeButton) closeButton.style.display = 'flex';
+          }
+        });
+      });
+    </script>
+</body>
+</html>
