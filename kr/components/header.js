@@ -8,7 +8,7 @@ class Header extends HTMLElement {
             <header>
                 <div class="logo">
                     <a href="index.html">
-                        <img src="/assets/epicpraxis.svg" alt="EPIC PRAXIS Logo">
+                        <img src="assets/epicpraxis.svg" alt="EPIC PRAXIS Logo">
                     </a>
                 </div>
                 <nav>
@@ -26,7 +26,7 @@ class Header extends HTMLElement {
                         <li><a href="career.html">함께하기</a></li>
                         <li>
                             <div class="language-toggle">
-                                <a href="/2025/epicpraxis/en/index.html">ENG</a> <span class="divider">|</span> <a href="/2025/epicpraxis/kr/index.html">KOR</a>
+                                <a href="2025/epicpraxis/en/index.html">ENG</a> <span class="divider">|</span> <a href="2025/epicpraxis/kr/index.html">KOR</a>
                             </div>
                         </li>
                     </ul>
@@ -45,7 +45,7 @@ class Header extends HTMLElement {
                         <li><a href="career.html">함께하기</a></li>
                         <li>
                             <div class="language-toggle">
-                                <a href="/en/index.html">ENG</a> <span class="divider">|</span> <a href="/kr/index.html">KOR</a>
+                                <a href="en/index.html">ENG</a> <span class="divider">|</span> <a href="kr/index.html">KOR</a>
                             </div>
                         </li>
                     </ul>
