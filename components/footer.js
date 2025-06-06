@@ -34,27 +34,27 @@ class Footer extends HTMLElement {
                 <div class="footer-service">
                   <div class="service-wrap">
                     <ul class="service-list">
-                      <li class="service-item"><a href="company.html">회사소개</a></li>
+                      <li class="service-item"><a href="../company.html">회사소개</a></li>
                       <li class="service-item"><a href="team.html">팀문화</a></li>
                       <li class="service-item"><a href="brand.html">브랜드</a></li>
                       <li class="service-item"><a href="blog.html">블로그</a></li>
                       <li class="service-item"><a href="#">함께하기</a></li>
                     </ul>
                     <ul class="service-list">
-                      <li class="service-item"><a href="privacy.html"><strong>개인정보 처리방침</strong></a></li>
-                      <li class="service-item"><a href="termsofuse.html"><strong>이용약관</strong></a></li>
+                      <li class="service-item"><a href="../privacy.html"><strong>개인정보 처리방침</strong></a></li>
+                      <li class="service-item"><a href="../terms.html"><strong>이용약관</strong></a></li>
                     </ul>
                   </div>
                   <div class="icon-wrap">
-                    <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank"><img src="../assets/footer/ar.svg" alt="ar"></a>
-                    <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank" class="social-icon"><img src="../assets/footer/myon.svg" alt="myon"></a>
-                    <a href="https://blog.naver.com/epiclang" class="social-icon" target="_blank"><img src="../assets/footer/blog.svg" alt="blog"></a>
+                    <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank"><img src="assets/footer/ar.svg" alt="ar"></a>
+                    <a href="https://global-zone60.renaissance-go.com/welcomeportal/rpna74yw" target="_blank" class="social-icon"><img src="assets/footer/myon.svg" alt="myon"></a>
+                    <a href="https://blog.naver.com/epiclang" class="social-icon" target="_blank"><img src="assets/footer/blog.svg" alt="blog"></a>
                   </div>
                   <div class="footer-info">
                     <p class="footer-logo">©EPIC PRAXIS</p>
                     <div class="footer-right-icons">
-                      <a href="javascript:void(0)" class="copy-link"><img src="../assets/footer/external.svg" alt="external link"></a>
-                      <a href="#" class="btn-top"><img src="../assets/footer/top.svg" alt="top button"></a>
+                      <a href="javascript:void(0)" class="copy-link"><img src="assets/footer/external.svg" alt="external link"></a>
+                      <a href="#" class="btn-top"><img src="assets/footer/top.svg" alt="top button"></a>
                     </div>
                   </div>
                 </div>
